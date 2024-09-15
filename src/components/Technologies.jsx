@@ -1,7 +1,7 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { FcAndroidOs } from "react-icons/fc";
-import { FaHtml5 } from "react-icons/fa";
+import { MdHtml } from "react-icons/md";
 import { MdOutlineCss } from "react-icons/md";
+import { FaNodeJs } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { IoLogoPython } from "react-icons/io";
 import { motion } from "framer-motion";
@@ -27,30 +27,6 @@ const Technologies = () => {
 
       <div className="flex flex-wrap items-center justify-center">
 
-        {/* REACTJS */}
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="p-2 icon-border"
-        >
-          <div className="border-2 border-cyan-500 rounded-full p-2">
-            <RiReactjsLine className="text-7xl text-cyan-500" />
-          </div>
-        </motion.div>
-
-        {/* ANDROID */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="p-2 icon-border"
-        >
-          <div className="border-2 border-green-500 rounded-full p-2">
-            <FcAndroidOs className="text-7xl text-green-500" />
-          </div>
-        </motion.div>
-
         {/* HTML */}
         <motion.div
           variants={iconVariants(5)}
@@ -59,7 +35,7 @@ const Technologies = () => {
           className="p-2 icon-border"
         >
           <div className="border-2 border-red-500 rounded-full p-2">
-            <FaHtml5 className="text-7xl text-red-500" />
+            <MdHtml className="text-7xl text-red-500" />
           </div>
         </motion.div>
 
@@ -72,6 +48,30 @@ const Technologies = () => {
         >
           <div className="border-2 border-purple-500 rounded-full p-2">
             <MdOutlineCss className="text-7xl text-purple-500" />
+          </div>
+        </motion.div>
+
+        {/* JS (Node.js) */}
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="p-2 icon-border"
+        >
+          <div className="border-2 border-green-500 rounded-full p-2">
+            <FaNodeJs className="text-7xl text-green-500" />
+          </div>
+        </motion.div>
+
+        {/* ReactJS */}
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="p-2 icon-border"
+        >
+          <div className="border-2 border-cyan-500 rounded-full p-2">
+            <RiReactjsLine className="text-7xl text-cyan-500" />
           </div>
         </motion.div>
 
