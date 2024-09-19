@@ -2,6 +2,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { MdHtml } from "react-icons/md";
 import { MdOutlineCss } from "react-icons/md";
 import { FaNodeJs } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { IoLogoPython } from "react-icons/io";
 import { motion } from "framer-motion";
@@ -72,6 +73,18 @@ const Technologies = () => {
         >
           <div className="border-2 border-cyan-500 rounded-full p-2">
             <RiReactjsLine className="text-7xl text-cyan-500" />
+          </div>
+        </motion.div>
+
+        {/* php */}
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="p-2 icon-border"
+        >
+         <div className="border-2 border-pink-500 rounded-full p-2">
+         <FaPhp className="text-7xl text-pink-500" />
           </div>
         </motion.div>
 
